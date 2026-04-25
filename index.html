@@ -42,54 +42,57 @@
 
 <!-- =======================  HERO  ======================= -->
 <section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-inner">
-    <div class="hero-image">
-      <img src="images/cammie-hero.webp" alt="Cammie Campbell" loading="eager">
-    </div>
+    <div class="hero-card">
+      <div class="hero-image">
+        <img src="images/cammie-hero.webp" alt="Cammie Campbell" loading="eager">
+      </div>
+      <div class="hero-signup">
+        <div class="hero-signup-logo">
+          <img src="images/logo-white.webp" alt="Cammie Campbell for Probate Judge">
+        </div>
 
-    <div class="hero-signup">
-      <h2>Join the Team</h2>
-      <p>Sign up for campaign updates, events, and ways to help Cammie win.</p>
+        <form class="web3-form" novalidate>
+          <input type="hidden" name="access_key" value="a4688b7a-0fd7-4d82-8709-f1d672ed37c7">
+          <input type="hidden" name="subject" value="New Homepage Sign-Up — Cammie for Probate Judge">
+          <input type="hidden" name="from_name" value="Cammie Campbell Website">
+          <input type="checkbox" name="botcheck" style="display:none;">
 
-      <form class="web3-form" novalidate>
-        <input type="hidden" name="access_key" value="a4688b7a-0fd7-4d82-8709-f1d672ed37c7">
-        <input type="hidden" name="subject" value="New Homepage Sign-Up — Cammie for Probate Judge">
-        <input type="hidden" name="from_name" value="Cammie Campbell Website">
-        <input type="checkbox" name="botcheck" style="display:none;">
+          <div class="form-message success">Thank you! You're signed up.</div>
+          <div class="form-message error">Something went wrong. Please try again.</div>
 
-        <div class="form-message success">Thank you! You're signed up.</div>
-        <div class="form-message error">Something went wrong. Please try again.</div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="hero-first">First Name <span class="required">*</span></label>
-            <input type="text" id="hero-first" name="First Name" required>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hero-first">First Name <span class="required">*</span></label>
+              <input type="text" id="hero-first" name="First Name" required>
+            </div>
+            <div class="form-group">
+              <label for="hero-last">Last Name <span class="required">*</span></label>
+              <input type="text" id="hero-last" name="Last Name" required>
+            </div>
           </div>
+
           <div class="form-group">
-            <label for="hero-last">Last Name <span class="required">*</span></label>
-            <input type="text" id="hero-last" name="Last Name" required>
+            <label for="hero-email">Email Address <span class="required">*</span></label>
+            <input type="email" id="hero-email" name="Email" required>
           </div>
-        </div>
 
-        <div class="form-group">
-          <label for="hero-email">Email Address <span class="required">*</span></label>
-          <input type="email" id="hero-email" name="Email" required>
-        </div>
+          <div class="form-group">
+            <label for="hero-phone">Phone Number</label>
+            <input type="tel" id="hero-phone" name="Phone">
+          </div>
 
-        <div class="form-group">
-          <label for="hero-phone">Phone Number</label>
-          <input type="tel" id="hero-phone" name="Phone">
-        </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="hero-sms" name="SMS Consent" value="Yes">
+            <label for="hero-sms">
+              By checking this box, you consent to receive calls and text messages from Cammie Campbell for Probate Judge. Messages may include campaign updates, event information, volunteer opportunities, and requests for donation. Msg &amp; data rates may apply. Msg frequency may vary. Reply STOP to opt-out and HELP for help. View <a href="privacy/">Terms of Service &amp; Privacy Policy</a> for more information.
+            </label>
+          </div>
 
-        <div class="checkbox-group">
-          <input type="checkbox" id="hero-sms" name="SMS Consent" value="Yes">
-          <label for="hero-sms">
-            By checking this box, you consent to receive calls and text messages from Cammie Campbell for Probate Judge. Messages may include campaign updates, event information, volunteer opportunities, and requests for donation. Msg &amp; data rates may apply. Msg frequency may vary. Reply STOP to opt-out and HELP for help. View <a href="privacy/">Terms of Service &amp; Privacy Policy</a> for more information.
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
-      </form>
+          <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
