@@ -114,7 +114,7 @@ a:hover { color: var(--secondary-red); }
   margin-bottom: 1rem;
 }
 
-.section-dark .eyebrow { color: #ff9da2; }
+.section-dark .eyebrow { color: #c8212a; }
 
 .text-center { text-align: center; }
 
@@ -393,7 +393,7 @@ a:hover { color: var(--secondary-red); }
 }
 
 .page-hero .eyebrow {
-  color: #ff9da2;
+  color: #c8212a;
 }
 
 /* Forms ---------------------------------------------------------------- */
