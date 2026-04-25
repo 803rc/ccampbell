@@ -703,6 +703,12 @@ a:hover { color: var(--secondary-red); }
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+  .split-content {
+    text-align: center;
+  }
+  .split-content .pull-quote {
+    text-align: left;
+  }
 }
 
 .split-image img {
