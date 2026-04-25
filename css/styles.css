@@ -404,8 +404,9 @@ a:hover { color: var(--secondary-red); }
   object-fit: cover;
   object-position: center 25%;
   display: block;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  image-rendering: auto;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
 
 .hero-signup {
