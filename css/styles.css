@@ -318,20 +318,10 @@ a:hover { color: var(--secondary-red); }
 /* Hero ----------------------------------------------------------------- */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-navy) 100%);
+  background-color: var(--primary-blue);
   color: var(--white);
   padding: 4rem 0;
   overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 20% 30%, rgba(200, 33, 42, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 80% 70%, rgba(45, 62, 140, 0.25) 0%, transparent 40%);
-  pointer-events: none;
 }
 
 .hero-inner {
@@ -387,22 +377,12 @@ a:hover { color: var(--secondary-red); }
 
 /* Page Hero ------------------------------------------------------------ */
 .page-hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-navy) 100%);
+  background-color: var(--primary-blue);
   color: var(--white);
   padding: 4rem 0 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-}
-
-.page-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 25% 50%, rgba(200, 33, 42, 0.15) 0%, transparent 45%),
-    radial-gradient(circle at 75% 50%, rgba(45, 62, 140, 0.25) 0%, transparent 45%);
-  pointer-events: none;
 }
 
 .page-hero > * { position: relative; z-index: 1; }
