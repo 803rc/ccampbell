@@ -1043,6 +1043,14 @@ a:hover { color: var(--secondary-red); }
   color: var(--primary-red);
 }
 
+.form-wrap .form-group .checkbox-item {
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 /* Footer --------------------------------------------------------------- */
 .site-footer {
   background-color: var(--dark-navy);
