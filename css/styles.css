@@ -389,20 +389,23 @@ a:hover { color: var(--secondary-red); }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  align-items: stretch;
 }
 
 .hero-image {
   position: relative;
-  min-height: 100%;
   background-color: var(--primary-blue);
+  overflow: hidden;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 25%;
   display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .hero-signup {
@@ -461,11 +464,11 @@ a:hover { color: var(--secondary-red); }
     grid-template-columns: 1fr;
   }
   .hero-image {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 5;
     min-height: 0;
   }
   .hero-image img {
-    object-position: center 20%;
+    object-position: center 15%;
   }
   .hero-signup {
     padding: 2rem 1.5rem;
