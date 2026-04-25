@@ -636,17 +636,19 @@ a:hover { color: var(--secondary-red); }
 }
 
 .priority-icon {
-  width: 48px;
-  height: 48px;
-  background-color: var(--primary-blue);
-  color: var(--white);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 800;
+  width: 56px;
+  height: 56px;
+  color: var(--primary-blue);
+  display: block;
+  margin: 0 auto 1.25rem;
+  stroke-width: 1.75;
+}
+
+@media (max-width: 600px) {
+  .priority-icon {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .priorities-cta {
