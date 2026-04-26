@@ -913,15 +913,88 @@ a:hover { color: var(--secondary-red); }
   font-size: 1.1rem;
 }
 
-.intro-text {
-  padding: 3rem 0;
+/* Issues Intro --------------------------------------------------------- */
+.issues-intro {
+  padding: 4.5rem 0 4rem;
 }
 
-.intro-text p {
-  font-size: 1.08rem;
-  line-height: 1.75;
-  max-width: 820px;
+.issues-pullquote {
+  position: relative;
+  margin: 0 auto 3rem;
+  padding: 2.5rem 1rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  max-width: 760px;
+}
+
+.issues-pullquote-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--primary-red);
+  display: block;
   margin: 0 auto 1.25rem;
+  opacity: 0.85;
+}
+
+.issues-pullquote-text {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--primary-blue);
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.01em;
+  font-style: normal;
+  quotes: none;
+}
+
+.issues-pullquote-text::before,
+.issues-pullquote-text::after {
+  content: none;
+}
+
+.issues-pullquote-attribution {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-red);
+}
+
+.issues-intro-prose {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.issues-intro-prose p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-body);
+  margin-bottom: 1.25rem;
+}
+
+.issues-intro-prose p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+  .issues-intro {
+    padding: 2.5rem 0 2.5rem;
+  }
+  .issues-pullquote {
+    padding: 2rem 0.5rem 1.75rem;
+    margin-bottom: 2.25rem;
+  }
+  .issues-pullquote-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 1rem;
+  }
+  .issues-intro-prose p {
+    font-size: 1rem;
+  }
 }
 
 /* News Page ------------------------------------------------------------ */
