@@ -851,7 +851,7 @@ a:hover { color: var(--secondary-red); }
 
 .value-card {
   padding: 2rem 1.5rem;
-  background-color: var(--white);
+  background-color: var(--light-bg);
   border-radius: var(--radius-md);
   border-top: 4px solid var(--primary-blue);
   box-shadow: var(--shadow-sm);
