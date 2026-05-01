@@ -264,18 +264,6 @@ a:hover { color: var(--secondary-red); }
   border-bottom-color: var(--primary-red);
 }
 
-.main-nav a.donate-link {
-  background-color: var(--primary-red);
-  color: var(--white);
-  padding: 0.65rem 1.25rem;
-  border-radius: var(--radius-sm);
-  border-bottom: none;
-}
-.main-nav a.donate-link:hover {
-  background-color: var(--secondary-red);
-  color: var(--white);
-}
-
 .nav-toggle {
   display: none;
   background: none;
@@ -334,11 +322,6 @@ a:hover { color: var(--secondary-red); }
   .main-nav a:hover,
   .main-nav a.active {
     border-bottom-color: var(--primary-red);
-  }
-  .main-nav a.donate-link {
-    text-align: center;
-    margin-top: 0.75rem;
-    border-bottom: none;
   }
   .nav-facebook {
     order: 99;
@@ -623,87 +606,6 @@ a:hover { color: var(--secondary-red); }
   background-color: #fee2e2;
   color: #991b1b;
   border: 1px solid #fca5a5;
-}
-
-/* Donate Section ------------------------------------------------------- */
-.donate-section {
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-red) 100%);
-  color: var(--white);
-  padding: 4rem 0;
-}
-
-.donate-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-
-.donate-text {
-  text-align: left;
-}
-
-.donate-text .eyebrow {
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0.75rem;
-}
-
-.donate-text h2 {
-  color: var(--white);
-  margin-bottom: 0.75rem;
-}
-
-.donate-text p {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.05rem;
-  margin: 0;
-}
-
-.donate-amounts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.85rem;
-}
-
-.donate-btn {
-  padding: 1.15rem 0.5rem;
-  background-color: var(--white);
-  color: var(--primary-red);
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: none;
-  border-radius: var(--radius-md);
-  border: 2px solid var(--white);
-  transition: all 0.2s ease;
-}
-.donate-btn:hover {
-  background-color: var(--primary-blue);
-  color: var(--white);
-  border-color: var(--primary-blue);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-@media (max-width: 800px) {
-  .donate-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .donate-text {
-    text-align: center;
-  }
-  .donate-text p {
-    max-width: 540px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .donate-amounts {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* Priorities Grid ------------------------------------------------------ */
