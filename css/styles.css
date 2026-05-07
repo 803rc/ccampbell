@@ -1037,6 +1037,212 @@ a:hover { color: var(--secondary-red); }
   display: inline-block;
 }
 
+/* Press Release Detail Page ------------------------------------------- */
+.press-release {
+  padding: 4rem 0 5rem;
+  background-color: var(--white);
+}
+
+.press-release-back {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary-red);
+  margin-bottom: 2.5rem;
+  transition: color 0.2s ease;
+}
+
+.press-release-back:hover {
+  color: var(--secondary-red);
+}
+
+.press-release-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.press-release-eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--primary-red);
+  margin-bottom: 1.25rem;
+}
+
+.press-release-header h1 {
+  color: var(--primary-blue);
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  line-height: 1.2;
+  margin: 0 0 1.25rem;
+}
+
+.press-release-deck {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0 0 2rem;
+}
+
+.press-release-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem 2.5rem;
+  margin: 0;
+  padding: 1.25rem 0 0;
+}
+
+.press-release-meta > div {
+  margin: 0;
+}
+
+.press-release-meta dt {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary-red);
+  margin: 0 0 0.3rem;
+}
+
+.press-release-meta dd {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.press-release-meta dd a {
+  color: var(--primary-blue);
+}
+
+.press-release-meta dd a:hover {
+  color: var(--primary-red);
+}
+
+.press-release-body p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-body);
+  margin-bottom: 1.4rem;
+}
+
+.press-release-body strong {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+.press-quote {
+  margin: 2.25rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  background-color: var(--light-bg);
+  border-left: 5px solid var(--primary-red);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.press-quote p {
+  font-family: var(--font-heading);
+  font-size: 1.15rem !important;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--primary-blue) !important;
+  line-height: 1.5 !important;
+  margin: 0 0 0.85rem !important;
+}
+
+.press-quote cite {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary-red);
+}
+
+.press-release-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+}
+
+.press-release-list li {
+  position: relative;
+  padding: 0.6rem 0 0.6rem 2rem;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--text-body);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.press-release-list li:last-child {
+  border-bottom: none;
+}
+
+.press-release-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  width: 18px;
+  height: 18px;
+  background-color: var(--primary-red);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'></polyline></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}
+
+.press-release-end {
+  margin-top: 2.5rem !important;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-light);
+  font-style: italic;
+  color: var(--text-muted) !important;
+}
+
+.press-release-end-mark {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  color: var(--primary-red);
+  margin: 1.5rem 0 0 !important;
+}
+
+@media (max-width: 700px) {
+  .press-release {
+    padding: 2.5rem 0 3rem;
+  }
+  .press-release-header h1 {
+    font-size: 1.65rem;
+  }
+  .press-release-deck {
+    font-size: 1.05rem;
+  }
+  .press-quote {
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+    margin: 1.75rem 0;
+  }
+  .press-quote p {
+    font-size: 1.05rem !important;
+  }
+}
+
 /* Contact Page --------------------------------------------------------- */
 .contact-grid {
   display: grid;
